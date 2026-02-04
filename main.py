@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 
 # CONFIGURATION
 # 1. Put the path to your photo here
-IMAGE_PATH = "sad.png"
+IMAGE_PATH = "image.png"
 
 # 2. Path to your trained model
 MODEL_PATH = "best_emotion_model.keras"
