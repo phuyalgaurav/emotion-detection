@@ -77,7 +77,8 @@ def run_realtime_detection():
             final_image = np.expand_dims(final_image, axis=-1)  # Channel dim
 
             # --- PREDICTION ---
-            prediction = model.predict(final_image, verbose=0)
+            # Use direct model call for faster inference in realtime
+            prediction = model(final_image, training=False).numpy()
             max_index = np.argmax(prediction)
             predicted_emotion = EMOTIONS[max_index]
             confidence = prediction[0][max_index] * 100

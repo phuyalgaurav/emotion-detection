@@ -10,7 +10,7 @@ A deep learning project for detecting emotions from facial expressions using Con
 
 ## Requirements
 
-- Python 3.13+
+- Python 3.8+
 - Dependencies listed in `pyproject.toml`
 
 ## Installation
