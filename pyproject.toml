@@ -3,7 +3,7 @@ name = "emotion-detection"
 version = "0.1.0"
 description = "Emotion detection project for DSMA 111"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.8"
 dependencies = [
     "matplotlib>=3.10.8",
     "numpy>=2.4.2",
